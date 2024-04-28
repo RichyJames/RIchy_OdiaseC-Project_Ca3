@@ -1,0 +1,13 @@
+# ninja log v5
+6	880	7360225368875378	CMakeFiles/untitled9.dir/main.cpp.obj	eab4e1f265653958
+4	829	7360219754050033	CMakeFiles/untitled9.dir/Crawler.cpp.obj	c782a20280f88987
+16	2335	7359675646124116	CMakeFiles/untitled9.dir/Bug.cpp.obj	e7aa631a6a155c6e
+882	1103	7360225371101826	untitled9.exe	694d1bbe92726fb2
+24	1511	7360213459355681	CMakeFiles/untitled9.dir/Board.cpp.obj	d953290daf7026c7
+5	656	7360222155246353	CMakeFiles/untitled9.dir/Hopper.cpp.obj	7e49fa7e790e3377
+32	1463	7360231714777285	CMakeFiles/untitled9.dir/Hopper.cpp.obj	2d590b2a1775ccdb
+17	1469	7360231714827381	CMakeFiles/untitled9.dir/Bug.cpp.obj	5d85697c2eba2b1d
+26	1480	7360231714957320	CMakeFiles/untitled9.dir/Crawler.cpp.obj	8eea6cb34b6cd7a1
+4	1575	7360231715928831	CMakeFiles/untitled9.dir/main.cpp.obj	6f5238fcd343570c
+11	1834	7360231718515304	CMakeFiles/untitled9.dir/Board.cpp.obj	2f2f64b819cb3575
+1834	2018	7360231720318828	untitled9.exe	694d1bbe92726fb2
