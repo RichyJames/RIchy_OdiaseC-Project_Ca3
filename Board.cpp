@@ -9,6 +9,7 @@
 #include "board.h"
 #include "crawler.h"
 #include "hopper.h"
+#include "spider.h"
 
 Board::Board() {
     board = std::vector<std::vector<std::list<Bug*>>>(10, std::vector<std::list<Bug*>>(10));
@@ -56,10 +57,16 @@ void Board::initializeBoardFromFile(const std::string& filename) {
             bugVector.push_back(newBug);
             board[position.first][position.second].push_back(newBug);
         }
+        else if (type == 'S') {
+            Bug* newBug = new Spider(id, position, direction, size, boardSize, *this);
+            bugVector.push_back(newBug);
+            board[position.first][position.second].push_back(newBug);
+        }
     }
 
     file.close();
 }
+
 std::vector<Bug*> Board::getBugVector() const {
     return bugVector;
 }
@@ -173,6 +180,8 @@ void Board::displayBoard() const {
                             std::cout << "Crawler ";
                         } else if (dynamic_cast<Hopper*>(bug)) {
                             std::cout << "Hopper ";
+                        } else if (dynamic_cast<Spider*>(bug)) {
+                            std::cout << "PerimeterCrawler ";
                         }
                         std::cout << bug->getId() << ", ";
                     }
@@ -238,6 +247,8 @@ void Board::writeLifeHistoryToFile() const {
             file << "Crawler ";
         } else if (dynamic_cast<const Hopper*>(bug)) {
             file << "Hopper ";
+        }else if (dynamic_cast<const Spider*>(bug)) {
+            file << "Spider ";
         }
         file << "Path: ";
         for (const auto& position : bug->getPath()) {

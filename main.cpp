@@ -1,12 +1,7 @@
 
 #include <iostream>
-#include <fstream>
-#include <vector>
-#include "bug.h"
 #include "board.h"
-#include "crawler.h"
-#include "hopper.h"
-#include <thread>
+
 int main() {
     Board board;
 

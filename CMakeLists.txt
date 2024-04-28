@@ -11,4 +11,8 @@ add_executable(untitled9 main.cpp
         Crawler.cpp
         Crawler.h
         Hopper.cpp
-        Hopper.h)
+        Hopper.h
+        Spider.cpp
+        Spider.h
+        Spider.h
+)

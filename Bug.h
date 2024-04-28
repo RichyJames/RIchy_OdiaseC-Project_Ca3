@@ -45,3 +45,4 @@ protected:
     Board& board;
 };
 
+#endif
