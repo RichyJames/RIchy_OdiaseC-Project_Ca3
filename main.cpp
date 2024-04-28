@@ -26,7 +26,6 @@ int main() {
 
         int option;
         std::cin >> option;
-
         switch (option) {
             case 0:
                 std::cout << "Exiting..." << std::endl;
